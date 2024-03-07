@@ -1,0 +1,21 @@
+.product-detail {
+  margin: 20px;
+
+  @media (min-width: 768px) {
+    margin: 40px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 40px 180px;
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    gap: 20px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+  }
+}
